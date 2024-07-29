@@ -18,10 +18,10 @@
         </div>
         <nav id="topNav">
             <ul class="menu">
-                <li><a href = "index.html">ABOUT</a></li>
-                <li><a href = "index.html">SKILLS</a></li>
-                <li><a href = "index.html">PROJECTS</a></li>
-                <li><a href = "index.html">CONTACT</a></li>
+                <li><a href = #aboutMeLink>ABOUT</a></li>
+                <li><a href = #skillsLink>SKILLS</a></li>
+                <li><a href = #projectsLink>PROJECTS</a></li>
+                <li><a href = #contactsLink>CONTACT</a></li>
             </ul>
         </nav>        
         
@@ -36,19 +36,19 @@
                         <h2>SUZY</h2>
                         <p class="greeting">I am a Web Developer Based in Toronto, Canada.</p>
                     </div>    
-
-                    <div id="scrollBarContainer">
-                        <h3 id="scroll1">WEB DEVELOPER</h3>
-                        <h3 id="scroll2">GRAPHICS DESIGNER</h3>
-                        <h3 id="scroll2">ILLUSTRATOR</h3>
-                        <h3 id="scroll2">3D DESIGNER</h3>
-                    </div>
                     
                     <div id="title2">
                         <h2>CODES</h2>
                     </div>    
+                    
+                    <!-- <div id="scrollBarContainer">
+                        <h3 id="scroll1">WEB DEVELOPER</h3>
+                        <h3 id="scroll2">GRAPHICS DESIGNER</h3>
+                        <h3 id="scroll2">ILLUSTRATOR</h3>
+                        <h3 id="scroll2">3D DESIGNER</h3>
+                    </div> -->
             </div>
-
+            <a id="aboutMeLink"> 
             <div id="aboutMeSection">
                 <img src="img/Rectangle 4.png" alt="Photo of SuzyCodes">
                 <div id="description">
@@ -65,32 +65,37 @@
                 </div>
 
             </div>
+             </a>
 
+            <a id="skillsLink">
             <div id="skillSetSection">
                 <h2 class="sectionTitle">SKILL <span style="color: #DDC2AA">SET</span></h2>
                 <div id="skillContainer">
+                   
                     <div class="skill">
-                        <img src="img/UItools-01 1.png" alt="UI Tools">
-                        <p class="skillButton">UI UX DESIGN</p>
-                        <p class="skillDes">Adobe Illustrator and Figma</p>
-                    </div>
-                    <div class="skill">
-                        <img src="img/frontendtools-01 1.png" alt="Front End Tools">
+                        <img src="img/frontendtools-01 1.png" alt="Front End Tools" class="skillimg">
                         <p class="skillButton">FRONT-END WEB DEVELOPMENT</p>
                         <p class="skillDes">HTML, CSS and Javascript</p>
                     </div>
                     <div class="skill">
-                        <img src="img/backendtools-01 1.png" alt="Backend Tools">
+                        <img src="img/UItools-01 1.png" alt="UI Tools" class="skillimg">
+                        <p class="skillButton">UI UX DESIGN</p>
+                        <p class="skillDes">Adobe Illustrator and Figma</p>
+                    </div>
+                    <div class="skill">
+                        <img src="img/backendtools-01 1.png" alt="Backend Tools" class="skillimg">
                         <p class="skillButton">BACK-END WEB DEVELOPMENT</p>
                         <p class="skillDes">ASP.NET in C#, mySQL Database</p>
                     </div>  
                 </div>
             </div>
+            </a>
 
+            <a id="projectsLink">
             <div id="projectSection">
                 <h2 class="sectionTitle">PRO<span style="color: #DDC2AA">JECTS</span></h2>
                     <div id="projectContainer">
-                        <img src="img/alexandra.png" alt="Alexandria Project">
+                        <img src="img/alexandra_small.png" alt="Alexandria Project">
                         <div id="projectDescription">
                             <h3 class="projectTitle">ALEXANDRIA</h3>
                             <div class="projectTask">
@@ -101,16 +106,40 @@
                             </div>
                             
                             <p class="projectParagraph">A decentralized, community driven, self-serviced, Learn-to-Earn platform operation on the principles of accessibility, incentivization, decentralization. I created the UI and UX for the application.</p>
-                            <a href="https://alexandria-orcin.vercel.app/" class="button">VISIT SITE</a> 
+                            <a href="https://alexandria-orcin.vercel.app/" class="projectButton">VISIT SITE</a> 
                         </div>
-                        
                     </div>
             </div>
+            </a>
         </main>
 
         <footer>
-            <h2>Let's Connect</h2>
-            <p>codessuzy@gmail.com</p>
+            <a id="contactsLink">
+            <h2 class="sectionTitle">LET'S <span style="color: #DDC2AA">CONNECT</span></h2>
+            
+           <form id="form">
+           
+            <div class="formfield">
+                 <label for="name">Your Name:</label><br>
+                 <input type="text" id="name" name="name">
+            </div>
+            
+            <div class="formfield">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="formfield">
+                <label for="message">Message:</label><br>
+                <textarea rows="5" cols="33" id="message" name="message"></textarea>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit"> 
+            </div>
+            
+           </form>
+            </a>
         </footer>
    
 </body>
