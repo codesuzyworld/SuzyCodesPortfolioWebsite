@@ -52,10 +52,15 @@ h1{
     justify-content: center;
 }
 body{
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    min-height:100vh;
     margin:0;
     font-family: "Jost",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #1B1B1B;
     color:white;
+    
 }
 
 /* Header */
@@ -110,6 +115,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width:auto;
     max-height:1000px;
     background-image: 
     url("../svg/EllipseGrey.svg"),
@@ -394,7 +400,7 @@ body{
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin:150px;
+    margin-bottom:150px;
 }
 
 #projectContainer{
@@ -551,7 +557,12 @@ input[type="submit"]:hover {
 /* MEDIA QUERIES */
 
 @media screen and (max-width:768px) {
-    
+    #heroSection{
+        padding:20px;
+        height:100%;
+        margin:0px;
+    }
+
     #header{
         display:flex;
         flex-direction: column;
@@ -590,6 +601,15 @@ input[type="submit"]:hover {
         gap: 50px;
         justify-content: center;
         align-items: center;
+        padding:50px;
+    }
+
+    #projectDescription{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 0;
     }
 
     .projectBtn{
@@ -599,22 +619,33 @@ input[type="submit"]:hover {
     .projectParagraph{
       text-align: center;
     }
+
+    .projectTask{
+        padding:0 50px 0 50px;
+    }
 }
 
 @media screen and (max-width:480px) {
+    #heroSection{
+        padding:20px;
+    }
+    
+    .menu {
+        font-size: 5px;
+        display:none;
+    }
+    
     #aboutMeSection{
         display:flex;
         flex-direction: column;
-
+        margin-top:100px;
+        margin-bottom:100px;
+        padding:10px;
     }
 
     #aboutMeSection img{
-        max-height: 100%;
-        max-width: 100%;
-        min-width:200px;
-        height: auto;
-        box-shadow: 5px 5px 23px 5px #75665d;
-        border-radius: 50px;
+        max-width:200px;
+
     }
     
     #description{
@@ -646,12 +677,61 @@ input[type="submit"]:hover {
         font-weight: 800;
         line-height: 4vw;
         letter-spacing: 18px;
-        margin:0;
+        margin-top:10px;
         padding:0;
     }
     
-    
     .paragraph{
         text-align:center;
+    }
+
+    #projectSection img{
+        min-width:100px;
+        max-width:200px;
+    }
+
+    #projectSection{
+        justify-content: center;
+        align-items: center;
+        padding:0px;
+        margin-top:100px;
+        margin-bottom:100px;
+    }
+
+    #projectSection img{
+        min-width:20px;
+        padding:10px;
+    }
+    .projectBtn{
+        padding:5px 10px;
+
+    }
+    .projectParagraph{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 250px;
+        justify-content: center;
+        padding:0 50px 0 50px;
+    }
+
+    .projectTask{
+        flex-wrap: wrap;
+        gap:5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+   #projectDescription{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 0;
+    }
+
+    .sectionTitle{
+        font-size: 30px;
     }
 }
