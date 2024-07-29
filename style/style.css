@@ -637,11 +637,6 @@ input[type="submit"]:hover {
         padding:10px;
     }
 
-    #aboutMeSection img{
-        max-width:200px;
-
-    }
-    
     #description{
         align-items: center;
     }
