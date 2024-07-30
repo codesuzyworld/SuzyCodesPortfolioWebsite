@@ -507,6 +507,11 @@ footer{
     margin:0;
 }
 
+.formfield{
+    display:flex;
+    flex-direction: column;
+}
+
 .formfield input[type="text"],
 .formfield input[type="email"]{
     width: 100%;
@@ -621,6 +626,10 @@ input[type="submit"]:hover {
     .projectTask{
         padding:0 50px 0 50px;
     }
+
+    footer{
+        padding:50px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -640,6 +649,7 @@ input[type="submit"]:hover {
         margin-bottom:100px;
         padding:10px;
     }
+
 
     #description{
         align-items: center;
@@ -725,5 +735,9 @@ input[type="submit"]:hover {
 
     .sectionTitle{
         font-size: 30px;
+    }
+
+    footer{
+        padding:50px;
     }
 }
