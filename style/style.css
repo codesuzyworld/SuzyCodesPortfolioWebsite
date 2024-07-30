@@ -22,7 +22,7 @@ a:link {
   
   /* selected link */
   a:active {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
 
@@ -326,7 +326,7 @@ body{
     justify-content: left;
     align-items: center;
     gap:50px;
-    padding: 30px;
+    padding:50px;
     background-image: 
     url("../svg/EllipseBeigeSkills.png");
     background-size: auto;
@@ -372,7 +372,6 @@ body{
     box-shadow: 0px 0px 5px 0px #646464 inset, 0px 4px 20px 0px #000;
     padding:20px 30px 20px 30px;
     color: #FFF;
-    max-width:auto;
     height:auto;
     text-align: center;
     font-size: 0.8em;
@@ -400,11 +399,13 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom:150px;
+    padding:50px;
 }
 
 #projectContainer{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
     align-items: center;
@@ -422,6 +423,7 @@ body{
 #projectDescription{
     display:flex;
     flex-direction: column;
+
     justify-content: left;
     align-items: center;
     flex-basis: 0;
@@ -430,10 +432,9 @@ body{
 #projectSection img{
     box-shadow: 0px 4px 20px 0px #686363;
     border-radius: 27px;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    min-width:200px;
+    max-width:500px;
+    width: 100%;
+    height: auto;
 }
 .projectParagraph{
     color: #FFF;
@@ -453,11 +454,15 @@ body{
 }
 
 .projectBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     border-radius: 50px;
     background: #313131;
     box-shadow: 0px 4px 20px 0px #000;
     padding:10px 20px;
-    max-width:50px;
+    max-width:100px;
     color: #FFF;
     text-align: center;
     font-size: 9.259px;
@@ -472,7 +477,7 @@ body{
     background: #383531;
     max-width:150px;
     box-shadow: 0px 0px 5px 0px #646464 inset, 0px 4px 20px 0px #000;  
-    padding: 8px 31px 8px 31px;
+    padding: 15px 31px 15px 31px;
     transition:0.5s;
     text-align: center;
 }
@@ -574,7 +579,6 @@ input[type="submit"]:hover {
         box-shadow: 0px 0px 5px 0px #646464 inset, 0px 4px 20px 0px #000;
         padding:20px 30px 20px 30px;
         color: #FFF;
-        max-width:auto;
         height:auto;
         text-align: center;
         font-size: 16px;
@@ -688,8 +692,7 @@ input[type="submit"]:hover {
     }
 
     #projectSection img{
-        min-width:20px;
-        padding:10px;
+        min-width:250px;
     }
     .projectBtn{
         padding:5px 10px;
